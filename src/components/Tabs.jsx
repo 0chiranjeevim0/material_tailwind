@@ -41,7 +41,7 @@ const TabsComp = () => {
     return (
         <div className="w-full mt-2">
             <Tabs className="w-full" value={activeTab} orientation="vertical">
-                <TabsHeader className="w-[350px]">
+                <TabsHeader className="w-[330px]">
                     {data.map(({label, value}) => (
                         <Tab key={value} value={value}  onClick={() => setActiveTab(value)}>
                             <span className="text-start">{label}</span> {/* Move label to the right of the icon */}
