@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar';
+import TimelineComp from './components/Timeline';
 import './App.css'
 
 function App() {
@@ -7,6 +8,9 @@ function App() {
     
     <div className="">
       <Navbar />
+      <div className="mt-10 px-6">
+        <TimelineComp />
+      </div>
     </div>
   )
 }
