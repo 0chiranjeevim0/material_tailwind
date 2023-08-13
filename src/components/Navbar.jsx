@@ -1,5 +1,6 @@
 import { Navbar,MobileNav,Typography,Button, IconButton} from "@material-tailwind/react";
 import {useState} from 'react';
+import TabsComp from './Tabs';
 
 
 const NavbarComp = () =>{
@@ -35,7 +36,7 @@ const NavbarComp = () =>{
         </ul>
     )
     return(
-        <div className="max-h-[768px] w-[calc(100%)]">
+        <div className="max-h-[800px] w-[calc(100%)]">
           <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4">
                 <div className="flex items-center justify-between text-blue-gray-900">
                     <Typography as="a" href="#" className="mr-4 cursor-pointer py-1.5 font-medium">
@@ -62,8 +63,8 @@ const NavbarComp = () =>{
                     </div>
                 </div>
                 <MobileNav open={navbar}>
-                    {navList}
-                    <Button variant="gradient" size="sm" fullWidth className="mb-2">
+                    <TabsComp />
+                    <Button variant="gradient" size="sm" fullWidth className="mb-2 mt-4">
                             <span>Log Out</span>
                     </Button>    
                 </MobileNav>
